@@ -1,0 +1,50 @@
+{
+    "version": "4229eaa8f",
+    "description": "Nintendo Switch emulator (nightly build)",
+    "homepage": "https://git.citron-emu.org/Citron/Emulator",
+    "license": {
+        "identifier": "GPL-3.0-or-later",
+        "url": "https://git.citron-emu.org/Citron/Emulator/src/branch/main/LICENSE.txt"
+    },
+    "notes": "ATTENTION: Citron requires Nintendo Switch firmware and a prod.keys file to function.",
+    "suggest": {
+        "Switch Army Knife (SAK)": "games/sak"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Zephyron-Dev/Citron-CI/releases/download/nightly-windows/Citron-windows-nightly-4229eaa8f-x64.zip",
+            "hash": "366fe80ffadcbf1b962801f37e27d521ca5d8d577bceaba56da42fd3cbf5ad8d"
+        }
+    },
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\")) {",
+        "   New-item \"$persist_dir\" -ItemType Directory | Out-Null",
+        "   New-item \"$persist_dir\\user\" -ItemType Directory | Out-Null",
+        "   if (Test-Path \"$env:APPDATA\\citron\") {",
+        "       Write-host \"Migrating AppData...\" -ForegroundColor yellow",
+        "       Copy-Item -Path \"$env:APPDATA\\citron\\*\" -Destination \"$persist_dir\\user\" -Recurse",
+        "       Remove-Item -Path \"$env:APPDATA\\citron\" -Recurse",
+        "   }",
+        "}"
+    ],
+    "bin": "citron.exe",
+    "shortcuts": [
+        [
+            "citron.exe",
+            "Citron"
+        ]
+    ],
+    "persist": "user",
+    "checkver": {
+        "url": "https://api.github.com/repos/Zephyron-Dev/Citron-CI/releases/tags/nightly-windows",
+        "jsonpath": "$.assets[0].name",
+        "regex": "Citron-windows-nightly-([\\w]+)-x64\\.zip"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Zephyron-Dev/Citron-CI/releases/download/nightly-windows/Citron-windows-nightly-$version-x64.zip"
+            }
+        }
+    }
+}
