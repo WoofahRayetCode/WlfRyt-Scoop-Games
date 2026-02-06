@@ -15,19 +15,7 @@
     },
     "url": "https://github.com/CXWorld/CapFrameX/releases/download/v1.8.4_beta/beta_1.8.4_portable.zip",
     "hash": "ebc952b54478abd3ba47f362ca8bde9bbad41e087b6276aa30a0cfce22d52235",
-    "pre_install": [
-        "$portable = @{",
-        "    portable = $true",
-        "    paths = @{",
-        "        config = './Portable/Config'",
-        "        captures = './Portable/Captures'",
-        "        screenshots = './Portable/Screenshots'",
-        "        logs = './Portable/Logs'",
-        "        cloud = './Portable/Captures/Cloud'",
-        "    }",
-        "}",
-        "$portable | ConvertTo-Json | Set-Content \"$dir\\portable.json\""
-    ],
+    "extract_dir": "beta_1.8.4_portable",
     "bin": "CapFrameX.exe",
     "shortcuts": [
         [
@@ -39,10 +27,11 @@
     "checkver": {
         "url": "https://api.github.com/repos/CXWorld/CapFrameX/releases?per_page=20",
         "jsonpath": "$[?(@.prerelease == true)].assets[?(@.name =~ /portable/i)].browser_download_url",
-        "regex": "download/v(?<version>[\\d.]+)_beta/beta_[\\d.]+_portable\\.zip",
-        "replace": "${version}-beta"
+        "regex": "download/v(?<ver>[\\d.]+)_beta/beta_[\\d.]+_portable\\.zip",
+        "replace": "${ver}-beta"
     },
     "autoupdate": {
-        "url": "https://github.com/CXWorld/CapFrameX/releases/download/v$matchVersion_beta/beta_$matchVersion_portable.zip"
+        "url": "https://github.com/CXWorld/CapFrameX/releases/download/v$matchVer_beta/beta_$matchVer_portable.zip",
+        "extract_dir": "beta_$matchVer_portable"
     }
 }
