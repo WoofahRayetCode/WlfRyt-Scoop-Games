@@ -1,5 +1,5 @@
 {
-    "version": "19acc53fb",
+    "version": "4af75b754",
     "description": "Nintendo Switch emulator (nightly build)",
     "homepage": "https://git.citron-emu.org/Citron/Emulator",
     "license": {
@@ -12,8 +12,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Zephyron-Dev/Citron-CI/releases/download/nightly-windows/Citron-windows-nightly-19acc53fb-x64.zip",
-            "hash": "f341d8c523a3e558c886dad90f217fa8f081f099bb025dbb03c451ed452b4eb8"
+            "url": "https://github.com/Zephyron-Dev/Citron-CI/releases/download/nightly-windows/Citron-windows-nightly-4af75b754-x64.zip",
+            "hash": "5d4b87b681a360c91005078836c89325bcea894d87973b9fddaa7f155a01d6b8"
         }
     },
     "pre_install": [
