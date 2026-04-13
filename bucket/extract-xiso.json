@@ -1,0 +1,32 @@
+{
+    "version": "build-202505152050",
+    "description": "A command-line utility used to create, modify, and extract Xbox ISOs (XISOs).",
+    "homepage": "https://github.com/xboxdev/extract-xiso",
+    "license": "BSD-4-Clause",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/XboxDev/extract-xiso/releases/download/build-202505152050/extract-xiso-Win64_Release.zip",
+            "hash": "fec88d03c7efd6205ab09be4abba70c0afd0eb27a5709f0a6235b828ba5ac11e"
+        },
+        "32bit": {
+            "url": "https://github.com/XboxDev/extract-xiso/releases/download/build-202505152050/extract-xiso-Win32_Release.zip",
+            "hash": "93d77014ec07d1038273c8d2f10b773681412e880319aad603b52a2ca64859e7"
+        }
+    },
+    "extract_dir": "artifacts",
+    "bin": "extract-xiso.exe",
+    "checkver": {
+        "url": "https://api.github.com/repos/xboxdev/extract-xiso/releases/latest",
+        "jsonpath": "$.tag_name"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/XboxDev/extract-xiso/releases/download/$version/extract-xiso-Win64_Release.zip"
+            },
+            "32bit": {
+                "url": "https://github.com/XboxDev/extract-xiso/releases/download/$version/extract-xiso-Win32_Release.zip"
+            }
+        }
+    }
+}
