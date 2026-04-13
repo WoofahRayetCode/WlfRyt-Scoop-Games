@@ -1,0 +1,33 @@
+{
+    "version": "2.0.2",
+    "description": "A GUI version of the command-line utility extract-xiso, used for creating, listing, rewriting, and extracting Xbox XISO files.",
+    "homepage": "https://github.com/KilLo445/extract-xiso-gui",
+    "license": "MIT",
+    "notes": "This version requires .NET Framework 4.8 to run.",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/KilLo445/extract-xiso-gui/releases/download/2.0.2/extract-xiso-gui.zip",
+            "hash": "a955f6971fea3120f318844accc3671c5c6dd929084d148019ffe6382118984f"
+        }
+    },
+    "bin": [
+        "extract-xiso-gui.exe",
+        "extract-xiso.exe"
+    ],
+    "shortcuts": [
+        [
+            "extract-xiso-gui.exe",
+            "Extract-xiso GUI"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/KilLo445/extract-xiso-gui"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/KilLo445/extract-xiso-gui/releases/download/$version/extract-xiso-gui.zip"
+            }
+        }
+    }
+}
