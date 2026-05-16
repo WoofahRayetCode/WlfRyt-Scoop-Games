@@ -1,0 +1,35 @@
+{
+    "version": "2026.05.14-a7570473c0c0d3271bf652f534ab8fd584c6dfae",
+    "description": "A Nintendo DS emulator (Nightly builds)",
+    "homepage": "http://desmume.org/",
+    "license": "GPL-2.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://nightly.link/TASEmulators/desmume/workflows/build_win/master/desmume-win-x64.zip",
+            "hash": "af1c05dfe6ace52e510ebb6f492abaa246ded3e4ebf0db835d897c7f1ff53572"
+        }
+    },
+    "bin": "DeSmuME-VS2022-x64-Release.exe",
+    "shortcuts": [
+        [
+            "DeSmuME-VS2022-x64-Release.exe",
+            "DeSmuME (Nightly)"
+        ]
+    ],
+    "persist": [
+        "DeSmuME.ini",
+        "Battery"
+    ],
+    "checkver": {
+        "url": "https://github.com/TASEmulators/desmume/commits/master.atom",
+        "regex": "(?s)<entry>.*?<id>.*?/([a-f0-9]+)</id>.*?<updated>(?<year>\\d+)-(?<month>\\d+)-(?<day>\\d+)T(?<hour>\\d+):(?<minute>\\d+):(?<second>\\d+)Z</updated>",
+        "replace": "${year}.${month}.${day}-${1}"
+    },
+    "autoupdate": {
+        "url": "https://nightly.link/TASEmulators/desmume/workflows/build_win/master/desmume-win-x64.zip",
+        "hash": {
+            "url": "https://github.com/TASEmulators/desmume/commits/master.atom",
+            "regex": "$sha"
+        }
+    }
+}
