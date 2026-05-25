@@ -1,5 +1,5 @@
 {
-    "version": "20260213170340-9369464",
+    "version": "20260525101447-505697f",
     "description": "Xbox 360 Emulator Research Project (development version)",
     "homepage": "https://github.com/xenia-canary/xenia-canary",
     "license": {
@@ -11,8 +11,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/xenia-canary/xenia-canary-releases/releases/download/9369464/xenia_canary_windows.zip",
-            "hash": "69cded77b325ce73b0eea26c7ae517e48db72a4c27675e3bf3b59c96648f5056"
+            "url": "https://github.com/xenia-canary/xenia-canary/releases/download/505697f/xenia_canary_windows.zip",
+            "hash": "944350687919bbcb02301d37efc02f3538a55105a39322ee3cb0eeacb257c490"
         }
     },
     "pre_install": [
@@ -46,7 +46,7 @@
         "xenia-canary.config.toml"
     ],
     "checkver": {
-        "url": "https://github.com/xenia-canary/xenia-canary-releases/releases.atom",
+        "url": "https://github.com/xenia-canary/xenia-canary/releases.atom",
         "script": [
             "$xml = [xml]$page",
             "$updated = ($xml.feed.entry | Where-Object {$_.title -ne 'canary_experimental'} | Sort-Object -Descending { $_.updated })[0].updated",
@@ -59,7 +59,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/xenia-canary/xenia-canary-releases/releases/download/$matchCommit/xenia_canary_windows.zip"
+                "url": "https://github.com/xenia-canary/xenia-canary/releases/download/$matchCommit/xenia_canary_windows.zip"
             }
         }
     }
