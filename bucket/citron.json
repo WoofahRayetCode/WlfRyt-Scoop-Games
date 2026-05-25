@@ -1,10 +1,10 @@
 {
-    "version": "659b23d64",
+    "version": "05e71276f",
     "description": "Nintendo Switch emulator (nightly build)",
-    "homepage": "https://git.citron-emu.org/Citron/Emulator",
+    "homepage": "https://github.com/citron-neo/emulator",
     "license": {
         "identifier": "GPL-3.0-or-later",
-        "url": "https://git.citron-emu.org/Citron/Emulator/src/branch/main/LICENSE.txt"
+        "url": "https://github.com/citron-neo/emulator/blob/main/LICENSE.txt"
     },
     "notes": "ATTENTION: Citron requires Nintendo Switch firmware and a prod.keys file to function.",
     "suggest": {
@@ -12,8 +12,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Zephyron-Dev/Citron-CI/releases/download/nightly-windows/Citron-windows-nightly-659b23d64-x64.zip",
-            "hash": "9b8344eb6124a06219e063441848df8f641a3dcd896132e0ecc5c43e9f9faeab"
+            "url": "https://github.com/citron-neo/CI/releases/download/nightly-windows/Citron-windows-nightly-05e71276f-x64-clangtron.zip",
+            "hash": "b6e51b8bbc6aa89dfacce3c8b0cc4f42754aef8d4da92b03e494dfe424472edf"
         }
     },
     "pre_install": [
@@ -36,14 +36,14 @@
     ],
     "persist": "user",
     "checkver": {
-        "url": "https://api.github.com/repos/Zephyron-Dev/Citron-CI/releases/tags/nightly-windows",
+        "url": "https://api.github.com/repos/citron-neo/CI/releases/tags/nightly-windows",
         "jsonpath": "$.assets[0].name",
-        "regex": "Citron-windows-nightly-([\\w]+)-x64\\.zip"
+        "regex": "Citron-windows-nightly-([\\w]+)-x64-clangtron\\.zip"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Zephyron-Dev/Citron-CI/releases/download/nightly-windows/Citron-windows-nightly-$version-x64.zip"
+                "url": "https://github.com/citron-neo/CI/releases/download/nightly-windows/Citron-windows-nightly-$version-x64-clangtron.zip"
             }
         }
     }
