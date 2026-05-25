@@ -12,6 +12,7 @@
         ]
     },
     "uninstaller": {
+        "file": "PawnIO_setup.exe",
         "args": [
             "-uninstall",
             "-silent"
