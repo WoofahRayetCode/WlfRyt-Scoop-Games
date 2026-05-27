@@ -1,5 +1,5 @@
 {
-    "version": "20260526175751-7a5cb96",
+    "version": "20260526212117-29311dd",
     "description": "Xbox 360 Emulator Research Project (development version)",
     "homepage": "https://github.com/xenia-canary/xenia-canary",
     "license": {
@@ -11,8 +11,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/xenia-canary/xenia-canary/releases/download/7a5cb96/xenia_canary_windows.zip",
-            "hash": "a9cc18114ecbcac945f9aa217cf64de1e49b30edcf7e2b37e825a4ba3b8d9c4b"
+            "url": "https://github.com/xenia-canary/xenia-canary/releases/download/29311dd/xenia_canary_windows.zip",
+            "hash": "2ec8743290e9177f259fdd2b90da825889431371825f2aec8a14af6852c96e71"
         }
     },
     "pre_install": [
