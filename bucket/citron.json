@@ -1,5 +1,5 @@
 {
-    "version": "05e71276f",
+    "version": "16bff1183",
     "description": "Nintendo Switch emulator (nightly build)",
     "homepage": "https://github.com/citron-neo/emulator",
     "license": {
@@ -12,8 +12,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/citron-neo/CI/releases/download/nightly-windows/Citron-windows-nightly-05e71276f-x64-clangtron.zip",
-            "hash": "b6e51b8bbc6aa89dfacce3c8b0cc4f42754aef8d4da92b03e494dfe424472edf"
+            "url": "https://github.com/citron-neo/CI/releases/download/nightly-windows/Citron-windows-nightly-16bff1183-x64-clangtron.zip",
+            "hash": "1375df86ad3c0adb4621cc95bfe8f9d87406fe6d31054907ebe8b25a173f28cf"
         }
     },
     "pre_install": [
