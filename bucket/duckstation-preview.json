@@ -19,12 +19,7 @@
             "url": "https://github.com/stenzek/duckstation/releases/download/preview/duckstation-windows-x64-release.zip",
             "hash": "e0eb28ffdeb0467b389ecfe582f1d2c2e40011d3a0c02b9beac9c9a2926c3caf",
             "post_install": [
-                "New-item \"$dir\\portable.txt\" -ItemType File | Out-Null",
-                "echo \"update bin/shortcuts\"",
-                "$shell = New-Object -COM WScript.Shell",
-                "$shortcut = $shell.CreateShortCut(\"$env:APPDATA\\Microsoft\\Windows\\Start Menu\\Programs\\Scoop Apps\\DuckStation (preview).lnk\")",
-                "$shortcut.TargetPath = \"$original_dir\\duckstation-qt-x64-ReleaseLTCG.exe\"",
-                "$shortcut.Save()"
+                "New-item \"$dir\\portable.txt\" -ItemType File | Out-Null"
             ],
             "bin": [
                 [
@@ -37,12 +32,7 @@
             "url": "https://github.com/stenzek/duckstation/releases/download/preview/duckstation-windows-arm64-release.zip",
             "hash": "afb1f7ce71a5057ca7dd3575225b3cf736aba68c9618339d859fd6c5435f6375",
             "post_install": [
-                "New-item \"$dir\\portable.txt\" -ItemType File | Out-Null",
-                "echo \"update bin/shortcuts\"",
-                "$shell = New-Object -COM WScript.Shell",
-                "$shortcut = $shell.CreateShortCut(\"$env:APPDATA\\Microsoft\\Windows\\Start Menu\\Programs\\Scoop Apps\\DuckStation (preview).lnk\")",
-                "$shortcut.TargetPath = \"$original_dir\\duckstation-qt-ARM64-ReleaseLTCG.exe\"",
-                "$shortcut.Save()"
+                "New-item \"$dir\\portable.txt\" -ItemType File | Out-Null"
             ],
             "bin": [
                 [
@@ -80,10 +70,6 @@
         "settings.ini"
     ],
     "pre_uninstall": "Copy-Item \"$dir\\settings.ini\" \"$persist_dir\" -ErrorAction SilentlyContinue -Force",
-    "post_uninstall": [
-        "echo \"update bin/shortcuts\"",
-        "Remove-Item \"$env:APPDATA\\Microsoft\\Windows\\Start Menu\\Programs\\Scoop Apps\\DuckStation (preview).lnk\""
-    ],
     "checkver": {
         "url": "https://github.com/stenzek/duckstation/releases/tag/preview",
         "regex": " datetime=\"(?<year>[0-9]{4})-(?<month>[0-9]{2})-(?<day>[0-9]{2})[\\s\\S]*?.*duckstation/commit/(?<commit>[0-9a-f]{7})",
