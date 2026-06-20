@@ -1,5 +1,5 @@
 {
-    "version": "1.8.4-beta",
+    "version": "1.8.7-beta",
     "description": "Frame time capture and analysis tool for gaming (development version)",
     "homepage": "https://www.capframex.com/",
     "license": {
@@ -8,14 +8,14 @@
     },
     "notes": [
         "ATTENTION: CapFrameX requires .NET 9.0 Desktop Runtime and Visual C++ 2015-2022 Redistributable.",
-        "The application will check for these dependencies on startup."
+        "The application will check for these dependencies on startup.",
+        "Note: If the autoupdate fails due to upstream asset naming changes, check the GitHub releases page manually."
     ],
     "suggest": {
         "Microsoft Visual C++ Runtime 2022": "extras/vcredist2022"
     },
-    "url": "https://github.com/CXWorld/CapFrameX/releases/download/v1.8.4_beta/beta_1.8.4_portable.zip",
-    "hash": "ebc952b54478abd3ba47f362ca8bde9bbad41e087b6276aa30a0cfce22d52235",
-    "extract_dir": "beta_1.8.4_portable",
+    "url": "https://github.com/CXWorld/CapFrameX/releases/download/v1.8.7_beta/release_1.8.7_.6_portable.zip",
+    "hash": "cec3996b30c0234919d6c22b251bd11f365a094f19f4bb998a53ee5a300f9f4a",
     "bin": "CapFrameX.exe",
     "shortcuts": [
         [
@@ -27,11 +27,10 @@
     "checkver": {
         "url": "https://api.github.com/repos/CXWorld/CapFrameX/releases?per_page=20",
         "jsonpath": "$[?(@.prerelease == true)].assets[?(@.name =~ /portable/i)].browser_download_url",
-        "regex": "download/v(?<ver>[\\d.]+)_beta/beta_[\\d.]+_portable\\.zip",
+        "regex": "download/v(?<ver>[\\d.]+)_beta/(?:beta|release)_.*_portable\\.zip",
         "replace": "${ver}-beta"
     },
     "autoupdate": {
-        "url": "https://github.com/CXWorld/CapFrameX/releases/download/v$matchVer_beta/beta_$matchVer_portable.zip",
-        "extract_dir": "beta_$matchVer_portable"
+        "url": "https://github.com/CXWorld/CapFrameX/releases/download/v$matchVer_beta/beta_$matchVer_portable.zip"
     }
 }
