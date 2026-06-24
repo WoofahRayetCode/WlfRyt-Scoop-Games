@@ -1,0 +1,35 @@
+{
+    "version": "2024.12.1",
+    "description": "A Nintendo 64 emulator focused on accuracy and ease of use, with Netplay support (formerly m64p)",
+    "homepage": "https://simple64.github.io/",
+    "license": {
+        "identifier": "GPL-3.0-or-later",
+        "url": "https://github.com/simple64/simple64/blob/main/LICENSE"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/simple64/simple64/releases/download/v2024.12.1/simple64-win64-b49e10e.zip",
+            "hash": "a1adcba8b771f5ef36939a396cc713c5b721027782041df65c9eb69a0f5b43c2"
+        }
+    },
+    "extract_dir": "simple64",
+    "bin": [
+        [
+            "simple64-gui.exe",
+            "simple64"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "simple64-gui.exe",
+            "simple64"
+        ]
+    ],
+    "checkver": {
+        "url": "https://api.github.com/repos/simple64/simple64/releases/latest",
+        "regex": "\"tag_name\":\\s*\"v(?<version>[\\d.]+)\"[\\s\\S]*?simple64-win64-(?<commit>[0-9a-f]+)\\.zip"
+    },
+    "autoupdate": {
+        "url": "https://github.com/simple64/simple64/releases/download/v$version/simple64-win64-$matchCommit.zip"
+    }
+}
