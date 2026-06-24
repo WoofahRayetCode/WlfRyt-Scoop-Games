@@ -1,0 +1,33 @@
+{
+    "version": "2.1.1",
+    "description": "A multi-system emulator (Nintendo NES, SNES, Game Boy, Game Boy Color, Game Boy Advance, PC Engine, SMS/Game Gear and WonderSwan) focused on accuracy, debugging and TAS features",
+    "homepage": "https://www.mesen.ca/",
+    "license": {
+        "identifier": "GPL-3.0-or-later",
+        "url": "https://github.com/SourMesen/Mesen2/blob/master/LICENSE"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/SourMesen/Mesen2/releases/download/2.1.1/Mesen_2.1.1_Windows.zip",
+            "hash": "23ccc2bc060b663c68dad3a8c5d6da7d23a50f872d04f135bafa2b04ff7d5cbe"
+        }
+    },
+    "bin": [
+        [
+            "Mesen.exe",
+            "mesen"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "Mesen.exe",
+            "Mesen"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/SourMesen/Mesen2"
+    },
+    "autoupdate": {
+        "url": "https://github.com/SourMesen/Mesen2/releases/download/$version/Mesen_$version_Windows.zip"
+    }
+}
