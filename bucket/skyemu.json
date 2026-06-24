@@ -1,0 +1,33 @@
+{
+    "version": "5",
+    "description": "A low-level Game Boy, Game Boy Color, Game Boy Advance and Nintendo DS emulator focused on accuracy and usability",
+    "homepage": "https://skyemu.app/",
+    "license": {
+        "identifier": "MIT",
+        "url": "https://github.com/skylersaleh/SkyEmu/blob/dev/LICENSE"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/skylersaleh/SkyEmu/releases/download/v5/SkyEmu-v5-Windows.exe#/SkyEmu.exe",
+            "hash": "730f9a6aa5a0ef005b00997dce061fa43d331a1a71484bda4138745aa62b168d"
+        }
+    },
+    "bin": [
+        [
+            "SkyEmu.exe",
+            "skyemu"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "SkyEmu.exe",
+            "SkyEmu"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/skylersaleh/SkyEmu"
+    },
+    "autoupdate": {
+        "url": "https://github.com/skylersaleh/SkyEmu/releases/download/v$version/SkyEmu-v$version-Windows.exe#/SkyEmu.exe"
+    }
+}
