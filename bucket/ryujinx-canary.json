@@ -1,5 +1,5 @@
 {
-    "version": "1.3.334",
+    "version": "1.3.335",
     "description": "A simple, experimental Nintendo Switch emulator",
     "homepage": "https://ryujinx.app/",
     "license": {
@@ -15,8 +15,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ewigl/ryubing-canary-mirror/releases/download/1.3.334/ryujinx-canary-1.3.334-win_x64.7z",
-            "hash": "f002d5fbd8be186140fb75b735d30ba4d6cbd4e13d31916a9012314c41d1ac81"
+            "url": "https://github.com/ewigl/ryubing-canary-mirror/releases/download/1.3.335/ryujinx-canary-1.3.335-win_x64.7z",
+            "hash": "757e90b99cd50731531b757c0f23e9430889a3c9fe979583306119dfec426cad"
         }
     },
     "extract_dir": "publish",
