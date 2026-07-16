@@ -1,16 +1,16 @@
 {
-    "version": "1784055937.8b8034a2a0",
+    "version": "1784228313.eb9280dedf",
     "description": "Open source Nintendo Switch emulator (Nightly builds)",
     "homepage": "https://eden-emu.dev/",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://git.eden-emu.dev/eden-ci/nightly/releases/download/v1784055937.8b8034a2a0/Eden-Windows-8b8034a2a0-amd64-msvc-standard.zip",
-            "hash": "2b64f2d9dc45ccb174ad0242f74693f7fff84ee0b8439344c1842206c6427c29"
+            "url": "https://git.eden-emu.dev/eden-ci/nightly/releases/download/v1784228313.eb9280dedf/Eden-Windows-eb9280dedf-amd64-msvc-standard.zip",
+            "hash": "a26200fd359c3883630c63e779c7c32621716b6a5638f6a7ec9c482dd16c9a78"
         },
         "arm64": {
-            "url": "https://git.eden-emu.dev/eden-ci/nightly/releases/download/v1784055937.8b8034a2a0/Eden-Windows-8b8034a2a0-arm64-clang-standard.zip",
-            "hash": "879991419eb1ac98406eb6fa9d323ccb04cca47eea76ed7c3e57a8c2a838b2ad"
+            "url": "https://git.eden-emu.dev/eden-ci/nightly/releases/download/v1784228313.eb9280dedf/Eden-Windows-eb9280dedf-arm64-clang-standard.zip",
+            "hash": "e5b0ab37a9d0112f5bd232acfa8354a93aa11b9e35dff9098353d340b0456af1"
         }
     },
     "pre_install": [
