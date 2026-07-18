@@ -1,13 +1,13 @@
 {
-    "version": "2026-07-17-0da2a58",
+    "version": "2026-07-18-bfb0122",
     "description": "PlayStation 4 emulator for Windows, Linux and macOS (development version)",
     "homepage": "https://shadps4.net/",
     "license": {
         "identifier": "GPL-2.0-only",
         "url": "https://github.com/shadps4-emu/shadPS4/blob/main/LICENSE"
     },
-    "url": "https://github.com/shadps4-emu/shadPS4/releases/download/Pre-release-shadPS4-2026-07-17-0da2a58b84bdef01488c90c7a477dbd8a4d2c8ff/shadps4-win64-sdl-2026-07-17-0da2a58.zip",
-    "hash": "e445826960d807bdb439a01915d3d6619a45ddaf9f9f022c46e02e62927e4793",
+    "url": "https://github.com/shadps4-emu/shadPS4/releases/download/Pre-release-shadPS4-2026-07-18-bfb0122bbe3c1dc7c71d4973d321869c0eb5e015/shadps4-win64-sdl-2026-07-18-bfb0122.zip",
+    "hash": "ddd117800dabe3d6b7da42a8e69c06651600089b4c0e48a492f18ccd54d85646",
     "bin": "shadPS4.exe",
     "shortcuts": [
         [
