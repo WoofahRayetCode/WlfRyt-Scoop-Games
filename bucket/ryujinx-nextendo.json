@@ -1,0 +1,52 @@
+{
+    "version": "1.7.2",
+    "description": "A Nintendo Switch emulator with Nextendo Network online features",
+    "homepage": "https://github.com/NextendoNetwork/Ryujinx-Nextendo",
+    "license": {
+        "identifier": "MIT",
+        "url": "https://github.com/NextendoNetwork/Ryujinx-Nextendo/blob/main/LICENSE.txt"
+    },
+    "notes": [
+        "ATTENTION: Ryujinx requires Nintendo Switch firmware and a prod.keys file to function.",
+        "Learn more at https://git.ryujinx.app/ryubing/ryujinx/-/wikis/FAQ-&-Troubleshooting"
+    ],
+    "suggest": {
+        "Switch Army Knife (SAK)": "games/sak"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/NextendoNetwork/Ryujinx-Nextendo/releases/download/v1.7.2/Nextendo-1.7.2-win-x64.zip",
+            "hash": "d331d9c511e30411bf1c2891f03d8068a40d7b4811ceb2dec6840a264c3468da"
+        }
+    },
+    "extract_dir": "publish",
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\")) {",
+        "   New-item \"$persist_dir\\portable\" -ItemType Directory | Out-Null",
+        "   if (Test-Path \"$env:APPDATA\\Ryujinx\") {",
+        "       Write-host \"Migrating AppData...\" -ForegroundColor yellow",
+        "       Copy-Item -Path \"$env:APPDATA\\Ryujinx\\*\" -Destination \"$persist_dir\\portable\" -Recurse",
+        "       Remove-Item -Path \"$env:APPDATA\\Ryujinx\" -Recurse",
+        "   }",
+        "}"
+    ],
+    "bin": "Ryujinx.exe",
+    "shortcuts": [
+        [
+            "Ryujinx.exe",
+            "Ryujinx (Nextendo)"
+        ]
+    ],
+    "persist": "portable",
+    "checkver": {
+        "github": "https://github.com/NextendoNetwork/Ryujinx-Nextendo",
+        "regex": "tag_name.*?v([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/NextendoNetwork/Ryujinx-Nextendo/releases/download/v$version/Nextendo-$version-win-x64.zip"
+            }
+        }
+    }
+}
