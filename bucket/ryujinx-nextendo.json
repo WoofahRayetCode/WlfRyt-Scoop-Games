@@ -1,5 +1,5 @@
 {
-    "version": "1.7.9",
+    "version": "1.8.0",
     "description": "A Nintendo Switch emulator with Nextendo Network online features",
     "homepage": "https://github.com/NextendoNetwork/Ryujinx-Nextendo",
     "license": {
@@ -15,8 +15,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/NextendoNetwork/Ryujinx-Nextendo/releases/download/v1.7.9/Nextendo-1.7.9-win-x64.zip",
-            "hash": "708d7054cd94079aba99c979070e8ff8737cf9a369f5cdcba89b46eeb94a28e6"
+            "url": "https://github.com/NextendoNetwork/Ryujinx-Nextendo/releases/download/v1.8.0/Nextendo-1.8.0-win-x64.zip",
+            "hash": "9d7b1cb4f4a7c42f7c9f65f88cd4f942a100fb20e020b13ccf7ae52e567fb963"
         }
     },
     "extract_dir": "publish",
