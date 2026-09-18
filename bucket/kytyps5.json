@@ -1,13 +1,13 @@
 {
-    "version": "2026-09-17-104530e",
+    "version": "2026-09-18-394e638",
     "description": "PlayStation 5 emulator for Windows, Linux and macOS",
     "homepage": "https://github.com/KytyPS5/KytyPS5",
     "license": {
         "identifier": "GPL-3.0-or-later",
         "url": "https://github.com/KytyPS5/KytyPS5/blob/main/LICENSE"
     },
-    "url": "https://github.com/KytyPS5/KytyPS5/releases/download/KytyPS5-2026-09-17-104530e/KytyPS5-2026-09-17-104530e-Windows-x64.zip",
-    "hash": "eb53f3531639049024cd5aa34986c5f87b0fa037b980836976549e40d535ab00",
+    "url": "https://github.com/KytyPS5/KytyPS5/releases/download/KytyPS5-2026-09-18-394e638/KytyPS5-2026-09-18-394e638-Windows-x64.zip",
+    "hash": "2a9e4c972846bb9cc3029c508c552b835b1ecd546e62f254502023b272e7de1e",
     "bin": [
         [
             "kyty_emulator.exe",
