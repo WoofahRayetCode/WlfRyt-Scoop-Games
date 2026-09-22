@@ -1,13 +1,13 @@
 {
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "A multi-system emulator written in C#",
     "homepage": "https://github.com/sharpemu/sharpemu",
     "license": {
         "identifier": "GPL-3.0-or-later",
         "url": "https://github.com/sharpemu/sharpemu/blob/main/LICENSE.txt"
     },
-    "url": "https://github.com/sharpemu/sharpemu/releases/download/v0.0.3/sharpemu-0.0.3-win-x64.zip",
-    "hash": "06c2c15bb8b883a6d81cd8df90073b4caeaffc4a5807ab2be728e62eff20b22b",
+    "url": "https://github.com/sharpemu/sharpemu/releases/download/v0.0.4/sharpemu-0.0.4-win-x64.zip",
+    "hash": "6819133ff0b04e51f1f697b9e42bd5161c792c5a2f24bfee473511a715c6877d",
     "bin": [
         [
             "SharpEmu.exe",
