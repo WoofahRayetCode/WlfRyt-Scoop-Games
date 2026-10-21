@@ -1,5 +1,5 @@
 {
-    "version": "0.0.43-20364",
+    "version": "0.0.43-20366",
     "description": "Open-source Sony PlayStation 3 emulator",
     "homepage": "https://rpcs3.net/",
     "license": {
@@ -15,8 +15,8 @@
     "suggest": {
         "Microsoft Visual C++ Runtime 2022": "extras/vcredist2022"
     },
-    "url": "https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-4b1a801f5498376f250a2b606bdfe580ff7c5943/rpcs3-v0.0.43-20364-4b1a801f_win64_msvc.7z",
-    "hash": "b92e2c95ae7fdc32463d4f3f7c9915ca1a8b1ff4adfff284c8dfec57af9790d9",
+    "url": "https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-4e078e07a847d1b07edcb4dd9657bc6e99eb7e35/rpcs3-v0.0.43-20366-4e078e07_win64_msvc.7z",
+    "hash": "03043d57b866d1e8e4b5e40146cce0c209277423ace9df89b10e029e54e232d7",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\")) {",
         "   New-Item \"$persist_dir\" -ItemType Directory | Out-Null",
