@@ -1,12 +1,12 @@
 {
-    "version": "2026.10.25-fc504ee0bc9ac3434cafcaae7b129c025499a609",
+    "version": "2026.11.06-334a9a8229e14a3b25b64be2267c26e5a51d36d1",
     "description": "A Nintendo DS emulator (Nightly builds)",
     "homepage": "http://desmume.org/",
     "license": "GPL-2.0-or-later",
     "architecture": {
         "64bit": {
             "url": "https://nightly.link/TASEmulators/desmume/workflows/build_win/master/desmume-win-x64.zip",
-            "hash": "fd1a82950c850ed388e6ddb34a780d16cf3c1cd76eff6f47f9cc07f3055b0d9d"
+            "hash": "77b0cc4c38cff66dd5d1d799a309079ccb343fdfeab8d3313dd043da1f0b8daa"
         }
     },
     "bin": "DeSmuME-VS2022-x64-Release.exe",
