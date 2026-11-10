@@ -1,12 +1,12 @@
 {
-    "version": "4.5.0",
+    "version": "4.5.1",
     "description": "A lightweight, open-source replacement for the HP OMEN Gaming Hub.",
     "homepage": "https://github.com/theantipopau/omencore",
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/theantipopau/omencore/releases/download/v4.5.0/OmenCore-4.5.0-win-x64.zip",
-            "hash": "59f82e9aef68cddc4fd3f544b84264ceff8b14ece1797afd2e99a9630b3c5199"
+            "url": "https://github.com/theantipopau/omencore/releases/download/v4.5.1/OmenCore-4.5.1-win-x64.zip",
+            "hash": "ee226650129263e7db9960d439e126aaff6d25cada93d2cac956b9d624993b2a"
         }
     },
     "bin": "OmenCore.exe",
