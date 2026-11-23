@@ -1,12 +1,12 @@
 {
-    "version": "2026.11.18-361ffa9501b631d53d7150fe57dec40a8341f664",
+    "version": "2026.11.22-ff972523f8a70e877dd054439876c3c8c6b79197",
     "description": "A Nintendo DS emulator aiming for fast and accurate emulation (Nightly builds)",
     "homepage": "http://melonds.kuribo64.net/",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
             "url": "https://nightly.link/melonDS-emu/melonDS/workflows/build-windows/master/melonDS-windows-x86_64.zip",
-            "hash": "755055bd144601fda61abd72f460d89b45f9841601041fdba49731073c8c48fb"
+            "hash": "1919140f47d706fd38ebd1565840066f6b671d63f5e8ec207f99ff1a4e7a1210"
         }
     },
     "installer": {
